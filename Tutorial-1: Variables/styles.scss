@@ -1,0 +1,16 @@
+$primary-font: Helvetica, sans-serif;
+$bg-color: #0B0C10;
+$font-color: #66FCF1;
+$heading-1: 18px;
+$page-width: 100%;
+
+body {
+  font-family: $primary-font;
+  color: $font-color;
+  background-color: $bg-color;
+//   width: $page-width;
+}
+
+h1{
+    font-size: $heading-1;
+}
