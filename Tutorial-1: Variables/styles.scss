@@ -14,3 +14,8 @@ body {
 h1{
     font-size: $heading-1;
 }
+
+p{
+    $font-color: #ccff99 !global;
+    color: $font-color;
+}
