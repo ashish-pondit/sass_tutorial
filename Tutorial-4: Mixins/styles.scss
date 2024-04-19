@@ -1,0 +1,48 @@
+@import "reset";
+
+$primary-font: Helvetica, sans-serif;
+$bg-color: #0B0C10;
+$font-color: #66FCF1;
+$heading-1: 18px;
+$page-width: 100%;
+$highlight-color: #ff5151;
+$link-color: #8698fd;
+
+body {
+  font-family: $primary-font;
+  color: $font-color;
+  background-color: $bg-color;
+//   width: $page-width;
+}
+
+h1{
+    font-size: $heading-1;
+}
+
+@mixin important-text($color) {
+  color: $color;
+  font-weight: bold;
+}
+
+.mark{
+  @include important-text($highlight-color);
+  background-color: #ffffff73;
+}
+
+@mixin exernal-link{
+  @include important-text($link-color);
+}
+
+.link{
+  @include exernal-link;
+}
+
+.link::after{
+  content: "";
+  display: inline-block;
+  background: url('./resources/new-tab.png') no-repeat;
+  background-size: cover;
+  height: 20px;
+  width: 20px;
+  margin-bottom: -5px;
+}

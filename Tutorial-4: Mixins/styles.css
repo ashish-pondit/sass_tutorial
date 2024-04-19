@@ -1,0 +1,40 @@
+html,
+body,
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Helvetica, sans-serif;
+  color: #66FCF1;
+  background-color: #0B0C10;
+}
+
+h1 {
+  font-size: 18px;
+}
+
+.mark {
+  color: #ff5151;
+  font-weight: bold;
+  background-color: rgba(255, 255, 255, 0.4509803922);
+}
+
+.link {
+  color: #8698fd;
+  font-weight: bold;
+}
+
+.link::after {
+  content: "";
+  display: inline-block;
+  background: url("./resources/new-tab.png") no-repeat;
+  background-size: cover;
+  height: 20px;
+  width: 20px;
+  margin-bottom: -5px;
+}
+
+/*# sourceMappingURL=styles.css.map */
