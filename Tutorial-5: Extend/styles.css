@@ -1,0 +1,38 @@
+body {
+  font-family: Helvetica, sans-serif;
+  color: #66fcf1;
+  background-color: #0b0c10;
+}
+
+h1 {
+  font-size: 18px;
+}
+
+p {
+  color: #ccff99;
+}
+
+.button-basic, .button-success, .button-delete, .button-common {
+  border: none;
+  margin: 0;
+  padding: 0;
+  padding: 4px 10px 4px 10px;
+  margin: 5px;
+  color: #0b0c10;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.button-common {
+  background-color: #c6cefc;
+}
+
+.button-delete {
+  background-color: #ffc1c1;
+}
+
+.button-success {
+  background-color: #ddffbc;
+}
+
+/*# sourceMappingURL=styles.css.map */

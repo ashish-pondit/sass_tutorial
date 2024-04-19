@@ -1,0 +1,54 @@
+$primary-font: Helvetica, sans-serif;
+$bg-color: #0b0c10;
+$font-color: #66fcf1;
+$heading-1: 18px;
+$page-width: 100%;
+$highlight-color: #ff5151;
+$link-color: #8698fd;
+
+body {
+    font-family: $primary-font;
+    color: $font-color;
+    background-color: $bg-color;
+    //   width: $page-width;
+}
+
+h1 {
+    font-size: $heading-1;
+}
+
+p {
+    $font-color: #ccff99;
+    color: $font-color;
+}
+
+@mixin button-reset {
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+
+.button-basic {
+  @include button-reset;
+  padding: 4px 10px 4px 10px;
+  margin: 5px;
+  // background-color: #abfdd4c7;
+  color: #0b0c10;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.button-common {
+  @extend .button-basic;
+  background-color: #c6cefc;
+}
+
+.button-delete {
+  @extend .button-basic;
+  background-color: #ffc1c1;
+}
+
+.button-success{
+  @extend .button-basic;
+  background-color: #ddffbc;
+}
